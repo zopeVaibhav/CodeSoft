@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <title>Pinaki Eats</title>
+  </head>
+  <body>
+    <a href="#" class="scrollTop show-scroll" id="scroll-top">
+      <i class="bx bx-chevron-up scrollTop_icon"></i>
+    </a>
+
+    <!--========== HEADER ==========-->
+    <header class="l-header" id="header">
+      <nav class="nav bd-container">
+        <a href="/" class="nav_logo">
+          <b>
+            2Eatly
+            <span>Eats</span>
+          </b>
+        </a>
+
+        <div class="nav_menu" id="nav-menu">
+          <ul class="nav_list">
+            <li class="nav_item">
+              <a href="#home" class="nav_link">Home</a>
+            </li>
+            <li class="nav_item">
+              <a href="#about" class="nav_link">About Us</a>
+            </li>
+            <li class="nav_item">
+              <a href="#services" class="nav_link">Services</a>
+            </li>
+            <li class="nav_item">
+              <a href="#foods" class="nav_link">Foods</a>
+            </li>
+            <li class="hidden_item">
+              <a href="#app" class="nav_link">App</a>
+            </li>
+            <li class="nav_item">
+              <a href="#contact" class="nav_link">Contact Us</a>
+            </li>
+
+            <li><i class="bx bx-moon change-theme" id="theme-button"></i></li>
+          </ul>
+        </div>
+
+        <div class="nav_toggle" id="nav-toggle">
+          <!--When clicked activate the class "opened"
+          to the button tag as well to the 4 SVG lines-->
+          <button
+            class="menu"
+            aria-label="Abrir Menu"
+            onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))"
+          >
+            <svg width="40" height="41" viewBox="0 0 100 100">
+              <path
+                class="line line1"
+                d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058"
+              />
+              <path class="line line2" d="M 20,50 H 80" />
+              <path
+                class="line line3"
+                d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942"
+              />
+            </svg>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main class="l-main">
+      <!--========== HOME ==========-->
+      <section class="home" id="home">
+        <div class="home_container bd-container bd-grid">
+          <div class="home_data">
+            <h1 class="home_title">Delicious Meals</h1>
+            <h2 class="home_subtitle">At the door of your house! 😍</h2>
+            <a href="#foods" class="button">Order Now</a>
+          </div>
+
+          <img
+          src="assets/img/home.jpg"
+            alt="Prato de comida saudável"
+            class="home_img"
+          />
+        </div>
+      </section>
+
+      <!--========== ABOUT ==========-->
+      <section class="about section bd-container" id="about">
+        <div class="about_container bd-grid">
+          <div class="about_data">
+            <span class="section-subtitle about_initial">About Us</span>
+            <h2 class="section-title about_initial">
+              Experience the best of your region!
+            </h2>
+            <p class="about_description">
+              With just a few taps on the screen, and with the Pinaki standard of
+              quality, we connect you with the best meals in your
+              region! 😎
+            </p>
+            <a href="#app" class="button">Did you like it? See now!</a>
+          </div>
+
+          <img
+          src="assets/img/about.jpg"
+            alt="Ingredientes naturais"
+            class="about_img"
+          />
+        </div>
+      </section>
+      <!--========== CONTACT US ==========-->
+      <section class="contact section bd-container" id="contact">
+        <div class="contact_container bd-grid">
+          <div class="contact_data">
+            <span class="section-subtitle contact_initial">Let's talk?</span
+            >
+            <h2 class="section-title contact_initial">Contact Us</h2>
+            <p class="contact_description">
+              Need some help using the app? View your orders
+              or more details and options about our services, contact us
+              now! We are online 24 hours a day, from Monday to Sunday! 😉
+            </p>
+          </div>
+
+          <div class="contact_button">
+            <a href="#" class="button">Get in Touch</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!--========== FOOTER ==========-->
+    <footer class="footer section bd-container">
+      <div class="footer_container bd-grid">
+        <div class="footer_content">
+          <b class="footer_logo">
+            2Eatly
+            <span>Eats</span>
+          </b>
+
+          <span class="footer_description">The best services for you. </span>
+
+          <div>
+            <a href="#" class="footer_social"
+              ><i class="bx bxl-instagram"></i
+            ></a>
+            <a href="#" class="footer_social"
+              ><i class="bx bxl-facebook"></i
+            ></a>
+            <a href="#" class="footer_social"><i class="bx bxl-twitter"></i></a>
+          </div>
+        </div>
+
+        <div class="footer_content">
+          <h3 class="footer_title">Information</h3>
+          <ul>
+            <li><a href="#" class="footer_link">Events</a></li>
+            <li><a href="#" class="footer_link">Privacy Policy</a></li>
+            <li><a href="#" class="footer_link">Service Terms</a></li>
+          </ul>
+        </div>
+
+        <div class="footer_content">
+          <h3 class="footer_title">Address</h3>
+          <ul>
+            <li>Shivaji Chowk</li>
+            <li>Talegaon Dabhade - 410507</li>
+            <li>Maharashtra, INDIA</li>
+          </ul>
+        </div>
+
+        <div class="footer_content">
+          <h3 class="footer_title">Navigation</h3>
+          <ul>
+            <li><a href="#app" class="footer_link">Download</a></li>
+            <li><a href="#contact" class="footer_link">Contact Us</a></li>
+            <li><a href="#foods" class="footer_link">Dishes of the Week</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <!--========== SCROLL REVEAL LIBRARY ==========-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--========== MAIN JS ==========-->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

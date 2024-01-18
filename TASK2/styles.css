@@ -1,0 +1,45 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f4f4f4;
+}
+
+.calculator {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  max-width: 300px;
+  background-color: #add8e6; /* Light Blue */
+  border-radius: 10px;
+  overflow: hidden;
+  /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); */
+  padding: 20px;
+  border: 2px solid #4682b4; /* Slightly Darker Blue */
+}
+
+.display {
+  grid-column: span 4;
+  background: linear-gradient(to right, #f6f6f6, #ffffff);
+  text-align: right;
+  padding: 15px;
+  font-size: 1.5em;
+  /* border-bottom: 2px solid #4682b4; */
+  border-radius: 8px;
+}
+
+button {
+  padding: 15px;
+  font-size: 1.2em;
+  background-color: #4682b4; /* Darker Blue */
+  color: #fff;
+  border: none; /* Remove the border */
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #87cefa; /* Light Blue on Hover */
+}
